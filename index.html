@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- ############################ -->
+      <div class="book-count">
+        <label for="bookCount">How many books?</label>
+        <input
+          type="number"
+          name="bookCount"
+          id="bookCount"
+          placeholder="Enter Books No."
+        />
+        <button id="countBtn">next</button>
+        <p class="invalidText" id="bookCountInvalid">
+          Please enter a value between 1 - 6
+        </p>
+      </div>
+      <!-- ############################ -->
+      <div class="book-info">
+        <h2 id="bookInfoTitle">Enter book 1 details</h2>
+        <input type="text" name="bookName" placeholder="Enter Book Name" />
+        <input type="text" name="bookAuth" placeholder="Enter Book Author" />
+        <input
+          type="text"
+          name="bookAuthEmail"
+          placeholder="Enter Book Author Email"
+        />
+        <input type="text" name="bookPrice" placeholder="Enter Book Price" />
+        <button id="infoBtn">Next</button>
+      </div>
+      <!-- ############################ -->
+      <div class="book-table">
+        <table>
+          <thead>
+            <th>Book Name</th>
+            <th>Book Author</th>
+            <th>Author Email</th>
+            <th>Book Price</th>
+            <th></th>
+            <th></th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

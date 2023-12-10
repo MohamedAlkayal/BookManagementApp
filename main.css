@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.book-count {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.book-count #bookCount {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+.book-count #countBtn {
+  cursor: pointer;
+
+  padding: 8px;
+  border: 1px solid #999;
+
+  border-radius: 4px;
+}
+
+.book-info {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  display: none;
+  padding: 46px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #eee;
+}
+
+.book-info h2 {
+  margin-bottom: 32px;
+}
+
+.book-info input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.invalid {
+  outline: 1px solid red;
+}
+
+.invalidText {
+  font-size: 14px;
+  color: red;
+  margin: 4px;
+  visibility: hidden;
+}
+
+.book-info button {
+  cursor: pointer;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #999;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+.book-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 12px;
+  width: 180px;
+  text-align: center;
+}
+
+th {
+  background-color: #ddd;
+}
+
+td {
+  background-color: #eee;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid #999;
+  background-color: #ddd;
+}

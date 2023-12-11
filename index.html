@@ -10,44 +10,48 @@
     <div class="container">
       <!-- ############################ -->
       <div class="book-count">
-        <label for="bookCount">How many books?</label>
+        <h1>📋 Reading list</h1>
+        <p class="description">
+          this is a web app to help you organaize your readings. Enter the
+          number of books on your reading list to keep track of your progress.
+        </p>
         <input
           type="number"
           name="bookCount"
           id="bookCount"
-          placeholder="Enter Books No."
+          placeholder="Enter number of books"
         />
-        <button id="countBtn">next</button>
-        <p class="invalidText" id="bookCountInvalid">
+        <button id="countBtn">Next</button>
+        <p class="invalidText" id="countInvalid">
           Please enter a value between 1 - 6
         </p>
       </div>
       <!-- ############################ -->
       <div class="book-info">
-        <h2 id="bookInfoTitle">Enter book 1 details</h2>
-        <input type="text" name="bookName" placeholder="Enter Book Name" />
-        <input type="text" name="bookAuth" placeholder="Enter Book Author" />
-        <input
-          type="text"
-          name="bookAuthEmail"
-          placeholder="Enter Book Author Email"
-        />
-        <input type="text" name="bookPrice" placeholder="Enter Book Price" />
-        <button id="infoBtn">Next</button>
+        <h2 id="bookInfoTitle">📚 Enter book ( 1 ) details</h2>
+        <div class="progress-bar">
+          <div class="progress"></div>
+          <div class="progress-end"></div>
+        </div>
+        <label for="bookName">Book title</label>
+        <input type="text" name="bookName" id="bookName" />
+        <label for="bookAuth">Author name</label>
+        <input type="text" name="bookAuth" id="bookAuth" />
+        <label for="bookPages">Number of pages</label>
+        <input type="text" name="bookPages" id="bookPages" />
+        <label for="bookCat">Category</label>
+        <input type="text" name="bookCat" id="bookCat" />
+        <div class="info-btns">
+          <button id="infoBtn">Add Book</button>
+          <button id="infoSkipBtn">Skip</button>
+        </div>
+        <p class="invalidText" id="infoInvalid">
+          Please enter a valid book title
+        </p>
       </div>
       <!-- ############################ -->
-      <div class="book-table">
-        <table>
-          <thead>
-            <th>Book Name</th>
-            <th>Book Author</th>
-            <th>Author Email</th>
-            <th>Book Price</th>
-            <th></th>
-            <th></th>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <div class="book-list">
+        <h1>Book List</h1>
       </div>
     </div>
     <script src="./main.js"></script>
